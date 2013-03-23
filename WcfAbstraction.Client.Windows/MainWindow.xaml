@@ -1,0 +1,75 @@
+﻿<Window x:Class="WcfAbstraction.Client.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="2"
+                   TextAlignment="Center"
+                   FontSize="16">WCF Client</TextBlock>
+
+        <Button Name="TestAlive"
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="5"
+                Click="TestAlive_Click">Test Service - Alive</Button>
+        <TextBlock Name="TestAliveResponse"
+                   Grid.Row="1"
+                   Grid.Column="1"></TextBlock>
+
+        <Button Name="TestException"
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="5"
+                Click="TestException_Click">Test Service - Argument Exception</Button>
+        <TextBlock Name="TestExceptionResponse"
+                   Grid.Row="2"
+                   Margin="5"
+                   Grid.Column="1"></TextBlock>
+
+        <Button Name="TestException2"
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="5"
+                Click="TestException2_Click">Test Service - Argument Exception</Button>
+        <TextBlock Name="TestException2Response"
+                   Grid.Row="3"
+                   Margin="5"
+                   Grid.Column="1"></TextBlock>
+
+        <Button Name="TestEntity"
+                Grid.Row="4"
+                Grid.Column="0"
+                Margin="5"
+                Click="TestEntity_Click">Test Service - Contract Entity</Button>
+        <TextBlock Name="TestEnityResponse"
+                   Grid.Row="4"
+                   Margin="5"
+                   Grid.Column="1"></TextBlock>
+
+        <Button Name="TestCircularRef"
+                Grid.Row="5"
+                Grid.Column="0"
+                Margin="5"
+                Click="TestCircularRef_Click">Test Service - Circular Entity</Button>
+        <TextBlock Name="TestCircularRefResponse"
+                   Grid.Row="5"
+                   Margin="5"
+                   Grid.Column="1"></TextBlock>
+    </Grid>
+</Window>

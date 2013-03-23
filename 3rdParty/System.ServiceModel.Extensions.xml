@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.ServiceModel.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Collection.Contains``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Returns true if collection contains the item
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Contains``1(System.Collections.Generic.IEnumerator{``0},``0)">
+            <summary>
+            Returns true if iterator contains the item
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ConvertAll``2(System.Collections.Generic.IEnumerable{``0},System.Converter{``0,``1})">
+            <summary>
+            Converts all the items of type T in collection to a new collection of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="collection"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ConvertAll``2(System.Collections.Generic.IEnumerator{``0},System.Converter{``0,``1})">
+            <summary>
+            Converts all the items of type T in iterator to a new iterator of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="iterator"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Exists``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">
+            <summary>
+            Returns true if collection contains an item that satisfies the predicate
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Exists``1(System.Collections.Generic.IEnumerator{``0},System.Predicate{``0})">
+            <summary>
+            Returns true if iterator contains an item that satisfies the predicate
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Find``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">
+            <summary>
+            Finds the first occurrence of item in collection that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Find``1(System.Collections.Generic.IEnumerator{``0},System.Predicate{``0})">
+            <summary>
+            Finds the first occurrence of item in iterator that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindAll``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">
+            <summary>
+            Finds all the items in collection that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindAll``1(System.Collections.Generic.IEnumerator{``0},System.Predicate{``0})">
+            <summary>
+            Finds all the items in iterator that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindComplement``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Finds all the items in iterator1 that are not in collection2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindComplement``1(System.Collections.Generic.IEnumerator{``0},System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Finds all the items in iterator1 that are not in collection2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator1"></param>
+            <param name="iterator2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindComplementIntersection``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Finds all the items that are not in the intersection of collection1 and collection2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindComplementIntersection``1(System.Collections.Generic.IEnumerator{``0},System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Finds all the items that are not in the intersection of iterator1 and iterator2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindDistinct``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns a collection of all the distinct items in collection (no duplicates)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindDistinct``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Returns a collection of all the distinct items in iterator (no duplicates)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindIndex``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Find the index of the first occurrence of item in collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindIndex``1(System.Collections.Generic.IEnumerator{``0},``0)">
+            <summary>
+            Find the index of the first occurrence of item in iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindIntersection``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Finds the intersection of collection1 and collection2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindIntersection``1(System.Collections.Generic.IEnumerator{``0},System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Finds the intersection of iterator1 and iterator2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindLast``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">
+            <summary>
+            Find the index of the last occurrence of item in collection that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindLast``1(System.Collections.Generic.IEnumerator{``0},System.Predicate{``0})">
+            <summary>
+            Find the index of the last occurrence of item in iterator that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindLastIndex``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Find the index of the last occurrence of item in collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindLastIndex``1(System.Collections.Generic.IEnumerator{``0},``0)">
+            <summary>
+            Find the index of the last occurrence of item in iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindUnion``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Finds the union of collection1 and collection2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.FindUnion``1(System.Collections.Generic.IEnumerator{``0},System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Finds the union of iterator1 and iterator2
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection1"></param>
+            <param name="collection2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+             Performs the action on every item in collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Collection.ForEach``1(System.Collections.Generic.IEnumerator{``0},System.Action{``0})">
+            <summary>
+            Performs the action on every item in iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Collection.GetLength``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns the number of items in collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.GetLength``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Returns the number of items in iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Reverse``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns a collection with a reverse order of items
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Reverse``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Returns a collection with a reverse order of items
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Sort``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Sorts the collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.Sort``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Sorts the items under the iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Converts collection to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Converts iterator to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Converts the items in collection to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="count">Initial size for optimization</param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``1(System.Collections.Generic.IEnumerator{``0},System.Int32)">
+            <summary>
+            Converts the items in iterator to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="count">Initial size for optimization</param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``2(System.Collections.Generic.IEnumerable{``0},System.Converter{``0,``1})">
+            <summary>
+            Converts the items in collection to an array of type U according to the converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="collection"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``2(System.Collections.Generic.IEnumerable{``0},System.Converter{``0,``1},System.Int32)">
+            <summary>
+            Converts the items in collection to an array  of type U according to the converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="count">Initial size for optimization</param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``2(System.Collections.Generic.IEnumerator{``0},System.Converter{``0,``1})">
+            <summary>
+            Converts the items in iterator to an array of type U according to the converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="collection"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToArray``2(System.Collections.Generic.IEnumerator{``0},System.Converter{``0,``1},System.Int32)">
+            <summary>
+            Converts the items in iterator to an array of type U according to the converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="count">Initial size for optimization</param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToList``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns a list out of collection
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.ToList``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Returns a list out of iterator
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.TrueForAll``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">
+            <summary>
+            Returns all the items in collection that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.TrueForAll``1(System.Collections.Generic.IEnumerator{``0},System.Predicate{``0})">
+            <summary>
+            Returns all the items in iterator that satisfy the predicate match
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeToArray``2(System.Collections.IEnumerable,System.Converter{``0,``1})">
+            <summary>
+            Converts all the items in the object-based collection of the type T to a new array of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeToArray``2(System.Collections.IEnumerator,System.Converter{``0,``1})">
+            <summary>
+            Converts all the items in the object-based iterator of the type T to a new array of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeToArray``1(System.Collections.IEnumerable)">
+            <summary>
+            Converts collection to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeToArray``1(System.Collections.IEnumerator)">
+            <summary>
+            Converts an iterator to an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iterator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeConvertAll``2(System.Collections.IEnumerable,System.Converter{``0,``1})">
+            <summary>
+            Converts all the items of type T in the object-based collection to a new collection of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="collection"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Collection.UnsafeConvertAll``2(System.Collections.IEnumerator,System.Converter{``0,``1})">
+            <summary>
+            Converts all the items of type T in the object-based IEnumerator to a new collection of type U according to converter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="collection"></param>
+            <param name="converter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityBehavior.#ctor(System.ServiceModel.Extensions.ServiceSecurity)">
+            <summary>
+            </summary>
+            <param name="mode">If set to ServiceSecurity.Anonymous,ServiceSecurity.BusinessToBusiness or ServiceSecurity.Internet then the service certificate must be listed in config file</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityBehavior.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.String)">
+            <summary>
+            </summary>
+            <param name="mode">Certificate is looked up by name from LocalMachine/My store</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.UnsecuredProxy``1(System.ServiceModel.ClientBase{``0})">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.AnonymousProxy``1(System.ServiceModel.ClientBase{``0})">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SecureProxy``1(System.ServiceModel.ClientBase{``0},System.String,System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SecureProxy``1(System.ServiceModel.ClientBase{``0},System.String,System.String,System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SecureProxy``1(System.ServiceModel.ClientBase{``0},System.String,System.String,System.String,System.Security.Principal.TokenImpersonationLevel)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SecureProxy``1(System.ServiceModel.ClientBase{``0},System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+            <param name="clientCertificateName">Certificate is looked up by name from LocalMachine/My store</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SecureProxy``1(System.ServiceModel.ClientBase{``0},System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SetCertificate``1(System.ServiceModel.ClientBase{``0},System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+            <param name="clientCertificateName">Certificate is looked up by name from LocalMachine/My store</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityHelper.SetCertificate``1(System.ServiceModel.ClientBase{``0},System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.String)">
+            <summary>
+            Can only call before using the proxy for the first time
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,`1)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.ServiceModel.Extensions.InstanceContext{`1})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,`1,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.ServiceModel.Extensions.InstanceContext{`1},System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,`1,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureDuplexClientBase`2.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.ServiceModel.Extensions.InstanceContext{`1},System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.AddErrorHandler(System.ServiceModel.Dispatcher.IErrorHandler)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.AddErrorHandler">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetThrottle(System.ServiceModel.Description.ServiceThrottlingBehavior)">
+            <summary>
+            Can only call before openning the host. Does not override config values if present 
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.ImpersonateAll">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetThrottle(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetThrottle(System.ServiceModel.Description.ServiceThrottlingBehavior,System.Boolean)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+            <param name="serviceThrottle"></param>
+            <param name="overrideConfig"></param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetSecurityBehavior(System.ServiceModel.Extensions.ServiceSecurity,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+            <param name="mode">If set to ServiceSecurity.Anonymous,ServiceSecurity.BusinessToBusiness or ServiceSecurity.Internet then the service certificate must be listed in config file</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetSecurityBehavior(System.ServiceModel.Extensions.ServiceSecurity,System.String,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+            <param name="mode">Certificate is looked up by name from LocalMachine/My store</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetSecurityBehavior(System.ServiceModel.Extensions.ServiceSecurity,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.String,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetThreadAffinity(System.String)">
+            <summary>
+             Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.ServiceHost`1.SetThreadAffinity">
+            <summary>
+             Can only call before openning the host
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.Extensions.ServiceHost`1.EnableMetadataExchange">
+            <summary>
+            Can only call before openning the host
+            </summary>
+            <param name="serviceThrottle"></param>
+            <param name="overrideConfig"></param>
+        </member>
+        <member name="P:System.ServiceModel.Extensions.ServiceHost`1.Throttle">
+            <summary>
+            Can only call after openning the host
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.Extensions.ServiceHost`1.IncludeExceptionDetailInFaults">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.Extensions.ServiceHost`1.SecurityAuditEnabled">
+            <summary>
+            Can only call before openning the host
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureClientBase`1.#ctor(System.ServiceModel.Extensions.ServiceSecurity)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureClientBase`1.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecureClientBase`1.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.InProcFactory.SetThrottle``1(System.ServiceModel.Description.ServiceThrottlingBehavior)">
+            <summary>
+            Can only call SetThrottle() before creating any instance of the service
+            </summary>
+            <typeparam name="S">Service type</typeparam>
+            <param name="throttle">Throttle to use</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.InProcFactory.SetSingleton``1(``0)">
+            <summary>
+            Can only call SetSingleton() before creating any instance of the service
+            </summary>
+            <typeparam name="S"></typeparam>
+            <param name="throttle"></param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityBehaviorAttribute.#ctor(System.ServiceModel.Extensions.ServiceSecurity)">
+            <summary>
+            </summary>
+            <param name="mode">If set to ServiceSecurity.Anonymous,ServiceSecurity.BusinessToBusiness or ServiceSecurity.Internet then the service certificate must be listed in config file</param>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.SecurityBehaviorAttribute.#ctor(System.ServiceModel.Extensions.ServiceSecurity,System.String)">
+            <summary>
+            </summary>
+            <param name="mode">Certificate is looked up by name from LocalMachine/My store</param>
+        </member>
+        <member name="T:System.ServiceModel.Extensions.TransactionalLock">
+            <summary>
+            Protects a resource manager by proving exclusive transaction isolation (Serializable level only)
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.Extensions.TransactionalLock.Lock">
+            <summary>
+            Acquires the lock for the exclusive use of a transaction. If another transaction owns the lock,it blocks the calling transaction and places it in a queue. If the transaction owns the lock already Lock() does nothing. 
+            </summary>
+        </member>
+    </members>
+</doc>
