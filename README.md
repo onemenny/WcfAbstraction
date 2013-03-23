@@ -20,7 +20,9 @@ You will need to wait till the server is loaded (the server console app will sta
 
 ## Third Party Helper##
 I have used www.idesign.net/ (Juval Lowy) code for the generic implementation of ServiceHost (ServiceHost<T>). 
+
 I have used Unity from the Enterprise Library for the DI and IOC container
+
 I have used Moq for the unit testing (used in conjunction with Unity to setup different app.config for unit testing instead of opening real services)
 
 
@@ -32,7 +34,7 @@ And on the server they are used to get a service reference within other service,
 ## The Heart of it all##
 The heart of the system is the proxy implementation. This is the abstraction of the WCF layer. Since WCF implementation itself implements the proxy client and server from the System.Runtime.Remoting  DLL. This gives you as a developer full control on the communication process. Since you get to intercept it before the invocation of the remoting method, you can view the arguments and validate them, you can handlecommunication exception and much much more. 
 
-** So give it a try before you go to the regular MS implementation with all the wizards and the auto generated code that you don’t have a clue about **
+**So give it a try before you go to the regular MS implementation with all the wizards and the auto generated code that you don’t have a clue about**
 
 
 
